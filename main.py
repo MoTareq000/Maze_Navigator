@@ -8,16 +8,16 @@ from helpers import plot_maze
 
 # --- load and pre-resize images (use relative paths if possible) ---
 # Adjust sizes if they look too big/small. Agent should be ~ 40-80 px depending on grid.
-agent_img = Image.open(r"C:\Users\Access\OneDrive - October 6 University Egypt\Desktop\MAZE PROJECT\unnamed-removebg-preview.png").convert("RGBA")
+agent_img = Image.open(r"unnamed-removebg-preview.png").convert("RGBA")
 agent_img_resized = agent_img.resize((48, 48))   # try 48, change if needed
 
-goal_img = Image.open(r"C:\Users\Access\OneDrive - October 6 University Egypt\Desktop\MAZE PROJECT\Gemini_Generated_Image_2kex3o2kex3o2kex-removebg-preview.png").convert("RGBA")
+goal_img = Image.open(r"Gemini_Generated_Image_2kex3o2kex3o2kex-removebg-preview.png").convert("RGBA")
 goal_img_resized = goal_img.resize((36, 36))     # try 36
 
-img_found = Image.open(r"C:\Users\Access\OneDrive - October 6 University Egypt\Desktop\MAZE PROJECT\ChatGPT Image Nov 23, 2025, 09_37_53 PM.png").convert("RGBA")
-img_notfound = Image.open(r"C:\Users\Access\OneDrive - October 6 University Egypt\Desktop\MAZE PROJECT\Gemini_Generated_Image_gpib3ggpib3ggpib-removebg-preview.png").convert("RGBA")
+img_found = Image.open(r"ChatGPT Image Nov 23, 2025, 09_37_53 PM.png").convert("RGBA")
+img_notfound = Image.open(r"Gemini_Generated_Image_6yywac6yywac6yyw-removebg-preview.png").convert("RGBA")
 
-st.title("Help Jinx Find the Glowing Neon Thread")
+st.title("Help Jinx Find the Magical coin")
 
 # --- controls ---
 maze_size = st.slider("Maze Size", 5, 25, 10)
