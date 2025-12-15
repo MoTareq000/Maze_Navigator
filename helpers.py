@@ -19,7 +19,7 @@ def plot_maze(maze, paths=None, visited_nodes_list=None,
     # Convert maze 0=open, 1=wall into a numpy array for plotting
 
     grid = np.array([[0 if maze[r][c]==0 else 1 for c in range(len(maze[0]))] for r in range(len(maze))])
-    fig, ax = plt.subplots(figsize=(cols/2, rows/2))
+    fig, ax = plt.subplots(figsize=(cols, rows))
   # dynamically scale
     ax.imshow(grid, cmap='Blues', origin='upper')           # nicer colors
 
